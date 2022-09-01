@@ -8,7 +8,19 @@ function isPalindrome(word) {
 
 /*
   Add written explanation of your solution here
+
 */
+function isPalindrome(word){
+  for (let i =0; i < word.length/2; i++){
+    const j= word.length -1-i;
+    const startChar = word [i]
+    const endChar = word [j]
+    if (startChar !== endChar) return false
+    {
+      return true;
+    }
+  }
+ }
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
